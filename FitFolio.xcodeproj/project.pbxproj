@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A03D9A92B0F5C4900D98F07 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A03D9A82B0F5C4900D98F07 /* ProfileViewController.swift */; };
 		7A215C722B07A8BE003B119D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A215C712B07A8BE003B119D /* AppDelegate.swift */; };
 		7A215C742B07A8BE003B119D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A215C732B07A8BE003B119D /* SceneDelegate.swift */; };
 		7A215C762B07A8BE003B119D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A215C752B07A8BE003B119D /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A03D9A82B0F5C4900D98F07 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7A215C6E2B07A8BE003B119D /* FitFolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitFolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A215C712B07A8BE003B119D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A215C732B07A8BE003B119D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				7A215C732B07A8BE003B119D /* SceneDelegate.swift */,
 				7A215C752B07A8BE003B119D /* ViewController.swift */,
 				7A215C772B07A8BE003B119D /* Main.storyboard */,
+				7A03D9A82B0F5C4900D98F07 /* ProfileViewController.swift */,
 				7A215C7A2B07A8BF003B119D /* Assets.xcassets */,
 				7A215C7C2B07A8BF003B119D /* LaunchScreen.storyboard */,
 				7A215C7F2B07A8BF003B119D /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				7A215C762B07A8BE003B119D /* ViewController.swift in Sources */,
 				7A215C722B07A8BE003B119D /* AppDelegate.swift in Sources */,
+				7A03D9A92B0F5C4900D98F07 /* ProfileViewController.swift in Sources */,
 				7A215C742B07A8BE003B119D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

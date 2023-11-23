@@ -17,17 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="VOa-KO-aro">
-                                <rect key="frame" x="-237" y="245" width="904" height="442"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="VOa-KO-aro">
+                                <rect key="frame" x="-237" y="165.66666666666669" width="904" height="600.66666666666652"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Vzr-dh-ajh" userLabel="Logo + Name">
-                                        <rect key="frame" x="369.66666666666663" y="8" width="165" height="231.33333333333334"/>
+                                        <rect key="frame" x="311.33333333333337" y="8" width="281.33333333333337" height="350"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="lUu-9m-NXs">
-                                                <rect key="frame" x="0.0" y="0.0" width="165" height="163"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FitFolioLogo" translatesAutoresizingMaskIntoConstraints="NO" id="lUu-9m-NXs">
+                                                <rect key="frame" x="0.0" y="0.0" width="281.33333333333331" height="281.66666666666669"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FitFolio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3L-jz-8lW">
-                                                <rect key="frame" x="17.333333333333343" y="187" width="130" height="44.333333333333343"/>
+                                                <rect key="frame" x="75.666666666666686" y="305.66666666666663" width="130" height="44.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="36"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Osp-EJ-gGN" userLabel="Buttons">
-                                        <rect key="frame" x="8" y="289.33333333333337" width="888" height="144.66666666666663"/>
+                                        <rect key="frame" x="8" y="448.00000000000006" width="888" height="144.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="center" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpH-d9-zkJ">
                                                 <rect key="frame" x="344" y="0.0" width="200" height="50"/>
@@ -43,7 +43,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background" strokeWidth="250" strokeOutset="50">
-                                                        <color key="backgroundColor" red="0.0" green="0.64313725490196072" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="0.0078431372549019607" green="0.18431372549019609" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
                                                     <directionalEdgeInsets key="contentInsets" top="20" leading="100" bottom="20" trailing="100"/>
                                                 </buttonConfiguration>
@@ -75,12 +75,12 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="center" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQm-2r-9AQ">
-                                                <rect key="frame" x="344" y="94.666666666666629" width="200" height="50"/>
+                                                <rect key="frame" x="344" y="94.666666666666742" width="200" height="50"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Register" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background" strokeWidth="250" strokeOutset="50">
-                                                        <color key="backgroundColor" red="0.0" green="0.64313725489999995" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="0.0078431372549019607" green="0.18431372549019609" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
                                                     <directionalEdgeInsets key="contentInsets" top="20" leading="100" bottom="20" trailing="100"/>
                                                 </buttonConfiguration>
@@ -188,7 +188,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Next" cornerStyle="capsule">
                                             <backgroundConfiguration key="background" strokeWidth="250" strokeOutset="50">
-                                                <color key="backgroundColor" red="0.0" green="0.64313725489999995" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.0078431372550000003" green="0.1843137255" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </backgroundConfiguration>
                                             <directionalEdgeInsets key="contentInsets" top="20" leading="100" bottom="20" trailing="100"/>
                                         </buttonConfiguration>
@@ -228,16 +228,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="2Mn-D1-5kF">
-                                <rect key="frame" x="92.000000000000014" y="169.66666666666669" width="246.33333333333337" height="592.66666666666652"/>
+                                <rect key="frame" x="66.333333333333343" y="110.33333333333331" width="297.33333333333326" height="711.33333333333348"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="BwI-9M-PhE" userLabel="Logo + Name">
-                                        <rect key="frame" x="40.666666666666657" y="8" width="165" height="231.33333333333334"/>
+                                        <rect key="frame" x="8" y="8" width="281.33333333333331" height="350"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="sXF-gZ-Ies">
-                                                <rect key="frame" x="0.0" y="0.0" width="165" height="163"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FitFolioLogo" translatesAutoresizingMaskIntoConstraints="NO" id="sXF-gZ-Ies">
+                                                <rect key="frame" x="0.0" y="0.0" width="281.33333333333331" height="281.66666666666669"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FitFolio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IP-h3-TZG">
-                                                <rect key="frame" x="17.333333333333343" y="187.00000000000003" width="130" height="44.333333333333343"/>
+                                                <rect key="frame" x="75.666666666666686" y="305.66666666666669" width="130" height="44.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="36"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -245,7 +245,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="TDQ-Gm-x57">
-                                        <rect key="frame" x="8" y="339.33333333333337" width="230.33333333333334" height="95.333333333333314"/>
+                                        <rect key="frame" x="33.666666666666671" y="458.00000000000006" width="230.33333333333331" height="95.333333333333314"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="7H2-Kv-uqz">
                                                 <rect key="frame" x="0.0" y="0.0" width="230.33333333333334" height="22.666666666666668"/>
@@ -282,12 +282,12 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="center" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7b-Hp-eoW">
-                                        <rect key="frame" x="23" y="534.66666666666674" width="200" height="50"/>
+                                        <rect key="frame" x="48.666666666666686" y="653.33333333333326" width="200" height="50"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="capsule">
                                             <backgroundConfiguration key="background" strokeWidth="250" strokeOutset="50">
-                                                <color key="backgroundColor" red="0.0" green="0.64313725489999995" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.0078431372550000003" green="0.1843137255" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </backgroundConfiguration>
                                             <directionalEdgeInsets key="contentInsets" top="20" leading="100" bottom="20" trailing="100"/>
                                         </buttonConfiguration>
@@ -318,25 +318,104 @@
         <!--Profile-->
         <scene sceneID="eny-dT-XK7">
             <objects>
-                <viewController title="Profile" id="t69-vo-p9n" sceneMemberID="viewController">
+                <viewController title="Profile" modalPresentationStyle="fullScreen" id="t69-vo-p9n" customClass="ProfileViewController" customModule="FitFolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t9t-Uq-FhC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQY-Ij-ioU">
+                                <rect key="frame" x="30" y="359.66666666666669" width="370" height="203.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-Qe-jzB">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="203"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-XA-QnG">
+                                                <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="54.333333333333336"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Move" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qS4-yl-KFz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="24.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="228" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vk7-v9-e1B">
+                                                        <rect key="frame" x="0.0" y="29.666666666666629" width="83.666666666666671" height="24.666666666666671"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aIL-vH-Pgm">
+                                                <rect key="frame" x="0.0" y="74.333333333333314" width="83.666666666666671" height="54.333333333333343"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjx-Zr-v8o">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="24.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6290" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxR-ph-Pnk">
+                                                        <rect key="frame" x="0.0" y="29.666666666666686" width="83.666666666666671" height="24.666666666666671"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Vc-Mp-Fls">
+                                                <rect key="frame" x="0.0" y="148.66666666666663" width="83.666666666666671" height="54.333333333333343"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFv-xB-zDR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="24.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.7" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cO0-3S-FWH">
+                                                        <rect key="frame" x="0.0" y="29.666666666666686" width="83.666666666666671" height="24.666666666666671"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.70588235290000001" green="0.84313725490000002" blue="0.88235294119999996" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wW-Ul-Vjj">
+                                        <rect key="frame" x="83.666666666666657" y="0.0" width="286.33333333333337" height="203"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hjz-Tx-dfK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HQY-Ij-ioU" firstAttribute="centerX" secondItem="t9t-Uq-FhC" secondAttribute="centerX" id="Kec-dc-z3D"/>
+                            <constraint firstItem="HQY-Ij-ioU" firstAttribute="centerY" secondItem="t9t-Uq-FhC" secondAttribute="centerY" id="RfI-hA-YN3"/>
+                            <constraint firstItem="HQY-Ij-ioU" firstAttribute="leading" secondItem="hjz-Tx-dfK" secondAttribute="leading" constant="30" id="j3g-Xz-vpf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" selectedImage="person.fill" id="u3M-s8-MfK">
                         <color key="badgeColor" systemColor="systemBackgroundColor"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="circleView1" destination="2wW-Ul-Vjj" id="ZMW-gR-ZN0"/>
+                        <outlet property="distanceValue" destination="cO0-3S-FWH" id="WWs-kK-jqT"/>
+                        <outlet property="moveValue" destination="vk7-v9-e1B" id="CLW-yp-pCj"/>
+                        <outlet property="stepsValue" destination="fxR-ph-Pnk" id="jrj-37-vKE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfa-vG-3OG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="1517"/>
+            <point key="canvasLocation" x="2127.9069767441861" y="1102.7896995708156"/>
         </scene>
         <!--Settings-->
         <scene sceneID="saR-Bb-VGv">
             <objects>
-                <viewController title="Settings" id="tFC-iz-Big" sceneMemberID="viewController">
+                <viewController title="Settings" modalPresentationStyle="fullScreen" id="tFC-iz-Big" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IZf-Wx-0VD">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -349,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZt-7I-KVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2192" y="1517"/>
+            <point key="canvasLocation" x="2128" y="2556"/>
         </scene>
         <!--Feeling-->
         <scene sceneID="bmd-mt-gbG">
@@ -479,7 +558,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Next" cornerStyle="capsule">
                                             <backgroundConfiguration key="background" strokeWidth="250" strokeOutset="50">
-                                                <color key="backgroundColor" red="0.0" green="0.64313725489999995" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.0078431372550000003" green="0.1843137255" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </backgroundConfiguration>
                                             <directionalEdgeInsets key="contentInsets" top="20" leading="100" bottom="20" trailing="100"/>
                                         </buttonConfiguration>
@@ -586,7 +665,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="capsule">
                                             <backgroundConfiguration key="background" strokeWidth="250" strokeOutset="50">
-                                                <color key="backgroundColor" red="0.0" green="0.64313725489999995" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.0078431372550000003" green="0.1843137255" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </backgroundConfiguration>
                                             <directionalEdgeInsets key="contentInsets" top="20" leading="100" bottom="20" trailing="100"/>
                                         </buttonConfiguration>
@@ -613,7 +692,7 @@
         <!--Home-->
         <scene sceneID="H4s-ff-jlO">
             <objects>
-                <viewController title="Home" id="e7T-lD-eUg" sceneMemberID="viewController">
+                <viewController title="Home" modalPresentationStyle="fullScreen" id="e7T-lD-eUg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ptx-2q-oSJ">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -632,11 +711,12 @@
                                                         <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                                         <edgeInsets key="layoutMargins" top="20" left="8" bottom="20" right="8"/>
                                                     </imageView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="FitFolio" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0U2-Zm-Pub">
-                                                        <rect key="frame" x="220" y="15" width="110" height="40"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FitFolio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KK-Ym-Dga">
+                                                        <rect key="frame" x="220" y="22.666666666666664" width="110" height="24.666666666666664"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="8" left="100" bottom="8" right="100"/>
                                             </stackView>
@@ -662,7 +742,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="215" height="601"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4M-Pg-HKQ">
-                                                                        <rect key="frame" x="10" y="8" width="200" height="327.66666666666674"/>
+                                                                        <rect key="frame" x="10" y="8" width="200" height="327.66666666666669"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="filled" title="Button" cornerStyle="small">
                                                                             <color key="baseBackgroundColor" red="0.36078431370000003" green="0.72156862749999995" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -697,7 +777,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="215" height="601"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcv-RZ-c2q">
-                                                                        <rect key="frame" x="5" y="8" width="200" height="207.33333333333337"/>
+                                                                        <rect key="frame" x="5" y="8" width="200" height="207.33333333333334"/>
                                                                         <color key="tintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="filled" title="Button" cornerStyle="small">
@@ -796,15 +876,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ne4-ZU-nG6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="1517"/>
+            <point key="canvasLocation" x="2128" y="1833"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="csK-fz-JE5">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="23L-5b-ZKK" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="23L-5b-ZKK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="EvO-gR-NNb"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OPT-GV-Css">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -829,13 +910,15 @@
         <image name="Dumbell" width="100" height="100"/>
         <image name="FitFolioLogo" width="281.5" height="281.5"/>
         <image name="Health" width="100" height="101"/>
-        <image name="Logo" width="165" height="163"/>
         <image name="Yoga" width="100" height="101"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
