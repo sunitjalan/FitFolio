@@ -19,6 +19,9 @@ class ProfileViewController: UIViewController {
         
         circleView1.layer.cornerRadius = circleView1.frame.width / 2
         circleView1.layer.masksToBounds = true
+        circleView1.layer.shouldRasterize = true
+        circleView1.layer.rasterizationScale = UIScreen.main.scale
+
         // Do any additional setup after loading the view.
     }
     
