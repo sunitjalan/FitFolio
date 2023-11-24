@@ -9,20 +9,14 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet var moveValue: UILabel!
-    @IBOutlet var stepsValue: UILabel!
-    @IBOutlet var distanceValue: UILabel!
-    @IBOutlet var circleView1: UIView!
+    @IBOutlet var cardViews: [UIView]!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        circleView1.layer.cornerRadius = circleView1.frame.width / 2
-        circleView1.layer.masksToBounds = true
-        circleView1.layer.shouldRasterize = true
-        circleView1.layer.rasterizationScale = UIScreen.main.scale
-
         // Do any additional setup after loading the view.
+        for card in cardViews {
+            card.layer.cornerRadius = 10
+            card.layer.masksToBounds = true
+        }
     }
     
 
