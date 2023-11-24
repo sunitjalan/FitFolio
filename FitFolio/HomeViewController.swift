@@ -23,6 +23,17 @@ class HomeViewController: UIViewController {
         performSegue(withIdentifier: "StepsSegue", sender: nil)
     }
 
+    @IBAction func kcalTapped(_sender: UITapGestureRecognizer){
+        performSegue(withIdentifier: "KcalSegue", sender: nil)
+    }
+    
+    @IBAction func heartTapped(_sender: UITapGestureRecognizer){
+        performSegue(withIdentifier: "HeartSegue", sender: nil)
+    }
+    
+    @IBAction func sleepTapped(_sender: UITapGestureRecognizer){
+        performSegue(withIdentifier: "SleepSegue", sender: nil)
+    }
     /*
     // MARK: - Navigation
 
