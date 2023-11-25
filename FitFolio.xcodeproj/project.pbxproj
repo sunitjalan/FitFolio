@@ -28,6 +28,15 @@
 		BB7D08862B11D77900177AAF /* MainGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D08852B11D77900177AAF /* MainGoalViewController.swift */; };
 		BB7D08882B11D7A700177AAF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D08872B11D7A700177AAF /* CreateAccountViewController.swift */; };
 		BB7D088A2B11EA5000177AAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D08892B11EA5000177AAF /* LoginViewController.swift */; };
+		BB7D088C2B12453A00177AAF /* WidgetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D088B2B12453A00177AAF /* WidgetCardView.swift */; };
+		BB7D088E2B1245B800177AAF /* WidgetCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7D088D2B1245B700177AAF /* WidgetCardView.xib */; };
+		BB7D08912B124A9A00177AAF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BB7D08902B124A9A00177AAF /* SnapKit */; };
+		BB7D08932B124A9A00177AAF /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BB7D08922B124A9A00177AAF /* SnapKit-Dynamic */; };
+		BB7D08972B124B4500177AAF /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D08962B124B4500177AAF /* HeartRate.swift */; };
+		BB7D08992B124EF800177AAF /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D08982B124EF800177AAF /* HealthViewController.swift */; };
+		BB7D089B2B1258EF00177AAF /* HeartRateChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D089A2B1258EF00177AAF /* HeartRateChartViewController.swift */; };
+		BB7D089D2B12815000177AAF /* SleepChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D089C2B12815000177AAF /* SleepChart.swift */; };
+		BB7D089F2B1282E000177AAF /* SleepChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D089E2B1282E000177AAF /* SleepChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +81,13 @@
 		BB7D08852B11D77900177AAF /* MainGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGoalViewController.swift; sourceTree = "<group>"; };
 		BB7D08872B11D7A700177AAF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		BB7D08892B11EA5000177AAF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BB7D088B2B12453A00177AAF /* WidgetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetCardView.swift; sourceTree = "<group>"; };
+		BB7D088D2B1245B700177AAF /* WidgetCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WidgetCardView.xib; sourceTree = "<group>"; };
+		BB7D08962B124B4500177AAF /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
+		BB7D08982B124EF800177AAF /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		BB7D089A2B1258EF00177AAF /* HeartRateChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateChartViewController.swift; sourceTree = "<group>"; };
+		BB7D089C2B12815000177AAF /* SleepChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChart.swift; sourceTree = "<group>"; };
+		BB7D089E2B1282E000177AAF /* SleepChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +95,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7D08912B124A9A00177AAF /* SnapKit in Frameworks */,
 				BB7D087A2B11494800177AAF /* RealmSwift in Frameworks */,
 				BB7D08782B11494800177AAF /* Realm in Frameworks */,
+				BB7D08932B124A9A00177AAF /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +122,8 @@
 		7A215C652B07A8BE003B119D = {
 			isa = PBXGroup;
 			children = (
+				BB7D088D2B1245B700177AAF /* WidgetCardView.xib */,
+				BB7D088B2B12453A00177AAF /* WidgetCardView.swift */,
 				7A215C702B07A8BE003B119D /* FitFolio */,
 				7A215C872B07A8BF003B119D /* FitFolioTests */,
 				7A215C912B07A8BF003B119D /* FitFolioUITests */,
@@ -142,6 +162,11 @@
 				BB7D087B2B11497800177AAF /* RealmManager.swift */,
 				BB7D087F2B11CADF00177AAF /* RegistrationViewModel.swift */,
 				BB7D08812B11CF7C00177AAF /* RegistrationData.swift */,
+				BB7D08962B124B4500177AAF /* HeartRate.swift */,
+				BB7D08982B124EF800177AAF /* HealthViewController.swift */,
+				BB7D089A2B1258EF00177AAF /* HeartRateChartViewController.swift */,
+				BB7D089C2B12815000177AAF /* SleepChart.swift */,
+				BB7D089E2B1282E000177AAF /* SleepChartViewController.swift */,
 			);
 			path = FitFolio;
 			sourceTree = "<group>";
@@ -182,6 +207,8 @@
 			packageProductDependencies = (
 				BB7D08772B11494800177AAF /* Realm */,
 				BB7D08792B11494800177AAF /* RealmSwift */,
+				BB7D08902B124A9A00177AAF /* SnapKit */,
+				BB7D08922B124A9A00177AAF /* SnapKit-Dynamic */,
 			);
 			productName = FitFolio;
 			productReference = 7A215C6E2B07A8BE003B119D /* FitFolio.app */;
@@ -257,6 +284,7 @@
 			mainGroup = 7A215C652B07A8BE003B119D;
 			packageReferences = (
 				BB7D08762B11494800177AAF /* XCRemoteSwiftPackageReference "realm-swift" */,
+				BB7D088F2B124A9A00177AAF /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 7A215C6F2B07A8BE003B119D /* Products */;
 			projectDirPath = "";
@@ -274,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7D088E2B1245B800177AAF /* WidgetCardView.xib in Resources */,
 				7A215C7E2B07A8BF003B119D /* LaunchScreen.storyboard in Resources */,
 				7A215C7B2B07A8BF003B119D /* Assets.xcassets in Resources */,
 				7A215C792B07A8BE003B119D /* Main.storyboard in Resources */,
@@ -301,18 +330,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7D088C2B12453A00177AAF /* WidgetCardView.swift in Sources */,
 				BB7D088A2B11EA5000177AAF /* LoginViewController.swift in Sources */,
 				7AA8D62E2B10941100B1FAA5 /* HomeViewController.swift in Sources */,
 				7A215C762B07A8BE003B119D /* ViewController.swift in Sources */,
 				BB7D08862B11D77900177AAF /* MainGoalViewController.swift in Sources */,
 				BB7D08882B11D7A700177AAF /* CreateAccountViewController.swift in Sources */,
+				BB7D089D2B12815000177AAF /* SleepChart.swift in Sources */,
 				7A215C722B07A8BE003B119D /* AppDelegate.swift in Sources */,
 				BB7D08842B11D4D300177AAF /* RegistrationViewController.swift in Sources */,
 				BB7D08802B11CADF00177AAF /* RegistrationViewModel.swift in Sources */,
+				BB7D08972B124B4500177AAF /* HeartRate.swift in Sources */,
+				BB7D08992B124EF800177AAF /* HealthViewController.swift in Sources */,
+				BB7D089B2B1258EF00177AAF /* HeartRateChartViewController.swift in Sources */,
 				7A03D9A92B0F5C4900D98F07 /* ProfileViewController.swift in Sources */,
 				7A215C742B07A8BE003B119D /* SceneDelegate.swift in Sources */,
 				BB7D08822B11CF7C00177AAF /* RegistrationData.swift in Sources */,
 				BB7D087C2B11497800177AAF /* RealmManager.swift in Sources */,
+				BB7D089F2B1282E000177AAF /* SleepChartViewController.swift in Sources */,
 				7AE13C222B11F92000A5FC7D /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,6 +711,14 @@
 				minimumVersion = 10.10.0;
 			};
 		};
+		BB7D088F2B124A9A00177AAF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -688,6 +731,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BB7D08762B11494800177AAF /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		BB7D08902B124A9A00177AAF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB7D088F2B124A9A00177AAF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		BB7D08922B124A9A00177AAF /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB7D088F2B124A9A00177AAF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

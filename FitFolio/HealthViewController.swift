@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import SwiftUI
+import SnapKit
 
 class HealthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //setupView()
         // Do any additional setup after loading the view.
     }
+
+    
     
 
     /*

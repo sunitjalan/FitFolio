@@ -15,4 +15,5 @@ struct RegistrationData {
     var username: String?
     var email: String?
     var password: String?
+    var fitnessGoal: String?
 }

@@ -59,6 +59,21 @@ class MainGoalViewController: UIViewController {
             updateSelectedImageView(sender.view as? UIImageView)
     }
     
+    func UIColorFromHex(hex: String) -> UIColor {
+        var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+        hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
+
+        var rgb: UInt64 = 0
+
+        Scanner(string: hexSanitized).scanHexInt64(&rgb)
+
+        let red = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
+        let green = CGFloat((rgb & 0x00FF00) >> 8) / 255.0
+        let blue = CGFloat(rgb & 0x0000FF) / 255.0
+
+        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+    
     func updateSelectedImageView(_ selectedImageView: UIImageView?) {
         // Reset border color for all image views
         FitnessImage.layer.borderColor = UIColor.clear.cgColor
@@ -68,7 +83,7 @@ class MainGoalViewController: UIViewController {
 
         // Highlight the selected image view by changing the border color
         selectedImageView?.layer.borderWidth = 2.0
-        selectedImageView?.layer.borderColor = UIColor.blue.cgColor
+        selectedImageView?.layer.borderColor = UIColorFromHex(hex: "#B4D7E1").cgColor
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {

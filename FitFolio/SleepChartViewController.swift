@@ -6,12 +6,25 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SleepChartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let chartHostingController = UIHostingController(rootView: SleepChart())
+        addChild(chartHostingController)
+        chartHostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(chartHostingController.view)
+
+        NSLayoutConstraint.activate([
+            chartHostingController.view.topAnchor.constraint(equalTo: view.topAnchor),
+            chartHostingController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            chartHostingController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            chartHostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+        chartHostingController.didMove(toParent: self)
         // Do any additional setup after loading the view.
     }
     

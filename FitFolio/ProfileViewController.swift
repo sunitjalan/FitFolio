@@ -17,14 +17,17 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mainGoalImage: UIImageView!
     @IBOutlet weak var mainGoalLabel: UILabel!
     
+    @IBOutlet weak var EasyImageView: UIImageView!
+    @IBOutlet weak var MediumImageView: UIImageView!
+    @IBOutlet weak var HardImageView: UIImageView!
+    var selectedDifficulty: String?
+
     
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var weightTextField: UITextField!
     
     @IBOutlet var easyView: UIView!
-    
     @IBOutlet var mediumView: UIView!
-    
     @IBOutlet var hardView: UIView!
     
     @IBOutlet var cardViews: [UIView]!
@@ -39,12 +42,117 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
             card.layer.masksToBounds = true
         }
         loadUserData()
+        highlightImageForPreviousFitnessGoal()
+        let easyTapGesture = UITapGestureRecognizer(target: self, action: #selector(difficultyImageViewTapped(_:)))
+        EasyImageView.addGestureRecognizer(easyTapGesture)
+        let mediumTapGesture = UITapGestureRecognizer(target: self, action: #selector(difficultyImageViewTapped(_:)))
+        MediumImageView.addGestureRecognizer(mediumTapGesture)
+
+        let hardTapGesture = UITapGestureRecognizer(target: self, action: #selector(difficultyImageViewTapped(_:)))
+        HardImageView.addGestureRecognizer(hardTapGesture)
+
+                // Enable user interaction for image views
+        EasyImageView.isUserInteractionEnabled = true
+        MediumImageView.isUserInteractionEnabled = true
+        HardImageView.isUserInteractionEnabled = true
+        
         
         // Add tap gesture recognizer to mainGoalView
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(mainGoalViewTapped))
         mainGoalView.addGestureRecognizer(tapGesture)
         
     }
+    
+    @objc func difficultyImageViewTapped(_ sender: UITapGestureRecognizer) {
+        guard let tappedImageView = sender.view as? UIImageView,
+              let currentUserEmail = SessionManager.shared.currentUserEmail,
+              let currentUser = RegistrationDataObject.userWithEmail(currentUserEmail)
+        else {
+            return
+        }
+
+        // Start a Realm write transaction
+        do {
+            let realm = try Realm()
+            try realm.write {
+                // Set difficulty level based on the tapped image view
+                switch tappedImageView {
+                case EasyImageView:
+                    currentUser.fitnessGoal = "Easy"
+                case MediumImageView:
+                    currentUser.fitnessGoal = "Medium"
+                case HardImageView:
+                    currentUser.fitnessGoal = "Hard"
+                default:
+                    break
+                }
+
+                // Save the updated data to Realm
+                realm.add(currentUser, update: .modified)
+            }
+
+            // Update UI after the write transaction
+            updateSelectedDifficultyView(tappedImageView)
+        } catch {
+            print("Error updating database: \(error)")
+        }
+    }
+
+    func highlightImageForPreviousFitnessGoal() {
+        guard let currentUserEmail = SessionManager.shared.currentUserEmail,
+              let currentUser = RegistrationDataObject.userWithEmail(currentUserEmail),
+              let fitnessGoal = currentUser.fitnessGoal
+        else {
+            return
+        }
+
+        // Use a write transaction to modify the Realm object
+        do {
+            let realm = try Realm()
+            try realm.write {
+                switch fitnessGoal {
+                case "Easy":
+                    self.updateSelectedDifficultyView(self.EasyImageView)
+                case "Medium":
+                    self.updateSelectedDifficultyView(self.MediumImageView)
+                case "Hard":
+                    self.updateSelectedDifficultyView(self.HardImageView)
+                default:
+                    break
+                }
+            }
+        } catch {
+            print("Error updating database: \(error)")
+        }
+    }
+
+    
+    func UIColorFromHex(hex: String) -> UIColor {
+        var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+        hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
+
+        var rgb: UInt64 = 0
+
+        Scanner(string: hexSanitized).scanHexInt64(&rgb)
+
+        let red = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
+        let green = CGFloat((rgb & 0x00FF00) >> 8) / 255.0
+        let blue = CGFloat(rgb & 0x0000FF) / 255.0
+
+        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+    
+    func updateSelectedDifficultyView(_ selectedImageView: UIImageView?) {
+        // Reset border color for all image views
+        EasyImageView.layer.borderColor = UIColor.clear.cgColor
+        MediumImageView.layer.borderColor = UIColor.clear.cgColor
+        HardImageView.layer.borderColor = UIColor.clear.cgColor
+
+        // Highlight the selected image view by changing the border color
+        selectedImageView?.layer.borderWidth = 2.0
+        selectedImageView?.layer.borderColor = UIColorFromHex(hex: "#B4D7E1").cgColor
+    }
+    
     // Function to handle tap on mainGoalView
     @objc func mainGoalViewTapped() {
         showMainGoalOptions()

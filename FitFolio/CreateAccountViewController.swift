@@ -28,7 +28,7 @@ class CreateAccountViewController: UIViewController {
         registrationData.username = UsernameTextField.text
         registrationData.email = EmailTextField.text
         registrationData.password = PasswordTextField.text
-
+        registrationData.fitnessGoal = "Easy"
                 // Store data in Realm
         storeDataInRealm()
         
@@ -46,6 +46,7 @@ class CreateAccountViewController: UIViewController {
                 registrationDataObject.username = registrationData.username
                 registrationDataObject.email = registrationData.email
                 registrationDataObject.password = registrationData.password
+                registrationDataObject.fitnessGoal = registrationData.fitnessGoal
 
                 realm.add(registrationDataObject)
                 
