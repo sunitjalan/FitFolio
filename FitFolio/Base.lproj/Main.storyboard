@@ -110,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="19.534883720930232" y="3.218884120171674"/>
         </scene>
-        <!--View Controller-->
+        <!--UserDetails-->
         <scene sceneID="im9-HF-hrK">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="91G-b1-G6W" sceneMemberID="viewController">
+                <viewController title="UserDetails" modalPresentationStyle="fullScreen" id="91G-b1-G6W" customClass="RegistrationViewController" customModule="FitFolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dkN-tu-ocH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,7 +193,9 @@
                                             <directionalEdgeInsets key="contentInsets" top="20" leading="100" bottom="20" trailing="100"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="xYu-cO-VK7" kind="show" id="Rhw-rm-1Tj"/>
+                                            <action selector="nextButtonTapped:" destination="sOq-Zi-HqB" eventType="touchUpInside" id="43k-7U-8HF"/>
+                                            <action selector="nextButtonTapped:" destination="91G-b1-G6W" eventType="touchUpInside" id="8OF-AF-bpw"/>
+                                            <segue destination="xYu-cO-VK7" kind="show" identifier="toMainGoalSegue" id="Rhw-rm-1Tj"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -217,15 +219,21 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageTextField" destination="aKG-Yf-9yY" id="2zB-G2-RoN"/>
+                        <outlet property="genderSelection" destination="aWo-AE-sh2" id="VhV-mK-2Pw"/>
+                        <outlet property="weightTextField" destination="PXY-2V-m4v" id="9zl-i5-0D1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IdS-Zj-t4g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="sOq-Zi-HqB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2478.1395348837209" y="-3.218884120171674"/>
         </scene>
         <!--Login-->
         <scene sceneID="aaC-JN-7mD">
             <objects>
-                <viewController title="Login" modalPresentationStyle="fullScreen" id="Zvy-g6-XtC" sceneMemberID="viewController">
+                <viewController title="Login" modalPresentationStyle="fullScreen" id="Zvy-g6-XtC" customClass="LoginViewController" customModule="FitFolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="azR-KV-HGB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,7 +303,8 @@
                                             <directionalEdgeInsets key="contentInsets" top="20" leading="100" bottom="20" trailing="100"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="23L-5b-ZKK" kind="show" id="kDP-B3-fQ4"/>
+                                            <action selector="LoginButtonTapped:" destination="Zvy-g6-XtC" eventType="touchUpInside" id="33Y-F7-0Y5"/>
+                                            <segue destination="23L-5b-ZKK" kind="show" identifier="toMainAppSegue" id="kDP-B3-fQ4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -313,6 +322,10 @@
                             <constraint firstItem="2Mn-D1-5kF" firstAttribute="centerX" secondItem="azR-KV-HGB" secondAttribute="centerX" id="way-da-pqA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Ocy-YS-Dc7" id="Mp3-AI-HbM"/>
+                        <outlet property="passwordTextField" destination="opJ-Iq-onU" id="kYD-hH-bfV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBa-E2-EXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -341,7 +354,7 @@
                                                         <edgeInsets key="layoutMargins" top="20" left="8" bottom="20" right="8"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FitFolio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rW-1R-Opz">
-                                                        <rect key="frame" x="181.66666666666666" y="19.333333333333329" width="71.333333333333343" height="24.666666666666671"/>
+                                                        <rect key="frame" x="181.66666666666666" y="19.333333333333314" width="71.333333333333343" height="24.666666666666686"/>
                                                         <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -518,11 +531,11 @@
                                                                                 </constraints>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKE-hF-3gU">
-                                                                                <rect key="frame" x="0.0" y="100.66666666666666" width="156.66666666666666" height="16.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="100.66666666666666" width="156.66666666666666" height="16.666666666666671"/>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uy7-7n-uoZ" userLabel="Details View ">
-                                                                                <rect key="frame" x="0.0" y="117.33333333333337" width="156.66666666666666" height="217.66666666666663"/>
+                                                                                <rect key="frame" x="0.0" y="117.33333333333336" width="156.66666666666666" height="217.66666666666663"/>
                                                                                 <subviews>
                                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eyE-pz-8Ag">
                                                                                         <rect key="frame" x="3" y="3" width="150.66666666666666" height="211.66666666666666"/>
@@ -807,10 +820,10 @@
             </objects>
             <point key="canvasLocation" x="1579.5348837209301" y="-3.218884120171674"/>
         </scene>
-        <!--View Controller-->
+        <!--MainGoal-->
         <scene sceneID="wBj-Pe-aco">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="xYu-cO-VK7" sceneMemberID="viewController">
+                <viewController title="MainGoal" modalPresentationStyle="fullScreen" id="xYu-cO-VK7" customClass="MainGoalViewController" customModule="FitFolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ate-1z-fyz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -906,7 +919,8 @@
                                             <directionalEdgeInsets key="contentInsets" top="20" leading="100" bottom="20" trailing="100"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="CwQ-3O-b7P" kind="show" id="rc8-3C-jI5"/>
+                                            <action selector="nextButtonTapped:" destination="xYu-cO-VK7" eventType="touchUpInside" id="Zcl-gn-mNl"/>
+                                            <segue destination="CwQ-3O-b7P" kind="show" identifier="toCreateAccountSegue" id="rc8-3C-jI5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -930,15 +944,21 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="BalanceImage" destination="Pqr-F8-5Gx" id="a8g-JT-G7z"/>
+                        <outlet property="BeActiveImage" destination="J5j-lR-LCB" id="YaT-kp-fcf"/>
+                        <outlet property="FitnessImage" destination="0EJ-hf-Wvk" id="aYO-O0-Fcr"/>
+                        <outlet property="HealthImage" destination="Ykf-zU-yQ0" id="ghF-Jl-eKR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDw-xL-5OP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3241" y="-3"/>
         </scene>
-        <!--View Controller-->
+        <!--CreateAccount-->
         <scene sceneID="v6m-m6-J4J">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="CwQ-3O-b7P" sceneMemberID="viewController">
+                <viewController title="CreateAccount" modalPresentationStyle="fullScreen" id="CwQ-3O-b7P" customClass="CreateAccountViewController" customModule="FitFolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nc6-FO-ebG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1009,13 +1029,14 @@
                                         <rect key="frame" x="15.333333333333343" y="492.66666666666674" width="200" height="50"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="capsule">
+                                        <buttonConfiguration key="configuration" style="plain" title="Register" cornerStyle="capsule">
                                             <backgroundConfiguration key="background" strokeWidth="250" strokeOutset="50">
                                                 <color key="backgroundColor" red="0.0078431372550000003" green="0.1843137255" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </backgroundConfiguration>
                                             <directionalEdgeInsets key="contentInsets" top="20" leading="100" bottom="20" trailing="100"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="RegisterButtonTapped:" destination="CwQ-3O-b7P" eventType="touchUpInside" id="iBj-MT-q8b"/>
                                             <segue destination="Zvy-g6-XtC" kind="showDetail" id="Sag-ET-FiD"/>
                                         </connections>
                                     </button>
@@ -1030,6 +1051,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Prz-2C-v7Q"/>
+                    <connections>
+                        <outlet property="EmailTextField" destination="djd-X0-DWQ" id="KP5-sD-Wp5"/>
+                        <outlet property="PasswordTextField" destination="Mf8-Dc-FFt" id="Fd3-JL-cT7"/>
+                        <outlet property="UsernameTextField" destination="Zmo-SC-fBn" id="6Qj-zh-Hkb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vn2-zU-Rh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1919,8 +1945,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KL5-cl-SbG"/>
-        <segue reference="DXc-9G-Z1Q"/>
+        <segue reference="rc8-3C-jI5"/>
+        <segue reference="Rhw-rm-1Tj"/>
         <segue reference="Sag-ET-FiD"/>
     </inferredMetricsTieBreakers>
     <resources>
