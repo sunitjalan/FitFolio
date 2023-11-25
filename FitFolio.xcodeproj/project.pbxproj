@@ -18,6 +18,7 @@
 		7A215C932B07A8BF003B119D /* FitFolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A215C922B07A8BF003B119D /* FitFolioUITests.swift */; };
 		7A215C952B07A8BF003B119D /* FitFolioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A215C942B07A8BF003B119D /* FitFolioUITestsLaunchTests.swift */; };
 		7AA8D62E2B10941100B1FAA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8D62D2B10941100B1FAA5 /* HomeViewController.swift */; };
+		7AE13C222B11F92000A5FC7D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE13C212B11F92000A5FC7D /* SessionManager.swift */; };
 		BB7D08782B11494800177AAF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BB7D08772B11494800177AAF /* Realm */; };
 		BB7D087A2B11494800177AAF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BB7D08792B11494800177AAF /* RealmSwift */; };
 		BB7D087C2B11497800177AAF /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D087B2B11497800177AAF /* RealmManager.swift */; };
@@ -62,6 +63,7 @@
 		7A215C922B07A8BF003B119D /* FitFolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitFolioUITests.swift; sourceTree = "<group>"; };
 		7A215C942B07A8BF003B119D /* FitFolioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitFolioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7AA8D62D2B10941100B1FAA5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7AE13C212B11F92000A5FC7D /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		BB7D08752B11028100177AAF /* FitFolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitFolio.entitlements; sourceTree = "<group>"; };
 		BB7D087B2B11497800177AAF /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		BB7D087F2B11CADF00177AAF /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				7A215C732B07A8BE003B119D /* SceneDelegate.swift */,
 				7A215C752B07A8BE003B119D /* ViewController.swift */,
 				7A215C772B07A8BE003B119D /* Main.storyboard */,
+				7AE13C212B11F92000A5FC7D /* SessionManager.swift */,
 				BB7D08892B11EA5000177AAF /* LoginViewController.swift */,
 				BB7D08872B11D7A700177AAF /* CreateAccountViewController.swift */,
 				BB7D08852B11D77900177AAF /* MainGoalViewController.swift */,
@@ -310,6 +313,7 @@
 				7A215C742B07A8BE003B119D /* SceneDelegate.swift in Sources */,
 				BB7D08822B11CF7C00177AAF /* RegistrationData.swift in Sources */,
 				BB7D087C2B11497800177AAF /* RealmManager.swift in Sources */,
+				7AE13C222B11F92000A5FC7D /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

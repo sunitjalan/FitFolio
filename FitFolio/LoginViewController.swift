@@ -29,6 +29,8 @@ class LoginViewController: UIViewController {
 
         // Check credentials in Realm
         if validateCredentials(email: enteredEmail, password: enteredPassword) {
+            // Successful login, set the current user email
+                SessionManager.shared.currentUserEmail = enteredEmail
             // Successful login, navigate to the main app screen
             performSegue(withIdentifier: "toMainAppSegue", sender: self)
             } else {

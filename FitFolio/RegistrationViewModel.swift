@@ -16,4 +16,16 @@ class RegistrationDataObject: Object {
     @Persisted var username: String?
     @Persisted var email: String?
     @Persisted var password: String?
+    
+    static func userWithEmail(_ email: String) -> RegistrationDataObject? {
+        do {
+            let realm = try Realm()
+            return realm.objects(RegistrationDataObject.self)
+                .filter("email == %@", email)
+                .first
+        } catch {
+            print("Error querying Realm: \(error)")
+            return nil
+        }
+    }
 }
