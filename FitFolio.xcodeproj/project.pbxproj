@@ -19,6 +19,7 @@
 		7A215C952B07A8BF003B119D /* FitFolioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A215C942B07A8BF003B119D /* FitFolioUITestsLaunchTests.swift */; };
 		7AA8D62E2B10941100B1FAA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8D62D2B10941100B1FAA5 /* HomeViewController.swift */; };
 		7AE13C222B11F92000A5FC7D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE13C212B11F92000A5FC7D /* SessionManager.swift */; };
+		BB1CEB622B136B75005BD52D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CEB612B136B75005BD52D /* ActivityViewController.swift */; };
 		BB7D08782B11494800177AAF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BB7D08772B11494800177AAF /* Realm */; };
 		BB7D087A2B11494800177AAF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BB7D08792B11494800177AAF /* RealmSwift */; };
 		BB7D087C2B11497800177AAF /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D087B2B11497800177AAF /* RealmManager.swift */; };
@@ -37,6 +38,10 @@
 		BB7D089B2B1258EF00177AAF /* HeartRateChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D089A2B1258EF00177AAF /* HeartRateChartViewController.swift */; };
 		BB7D089D2B12815000177AAF /* SleepChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D089C2B12815000177AAF /* SleepChart.swift */; };
 		BB7D089F2B1282E000177AAF /* SleepChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D089E2B1282E000177AAF /* SleepChartViewController.swift */; };
+		BB82A8902B13584400737014 /* SleepDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82A88F2B13584400737014 /* SleepDataObject.swift */; };
+		BB82A8922B13585A00737014 /* HeartDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82A8912B13585A00737014 /* HeartDataObject.swift */; };
+		BB82A8942B13587C00737014 /* ActivityDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82A8932B13587C00737014 /* ActivityDataObject.swift */; };
+		BB82A8962B13588C00737014 /* NutritionDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82A8952B13588C00737014 /* NutritionDataObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,7 @@
 		7A215C942B07A8BF003B119D /* FitFolioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitFolioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7AA8D62D2B10941100B1FAA5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7AE13C212B11F92000A5FC7D /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		BB1CEB612B136B75005BD52D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		BB7D08752B11028100177AAF /* FitFolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitFolio.entitlements; sourceTree = "<group>"; };
 		BB7D087B2B11497800177AAF /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		BB7D087F2B11CADF00177AAF /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
@@ -88,6 +94,10 @@
 		BB7D089A2B1258EF00177AAF /* HeartRateChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateChartViewController.swift; sourceTree = "<group>"; };
 		BB7D089C2B12815000177AAF /* SleepChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChart.swift; sourceTree = "<group>"; };
 		BB7D089E2B1282E000177AAF /* SleepChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChartViewController.swift; sourceTree = "<group>"; };
+		BB82A88F2B13584400737014 /* SleepDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDataObject.swift; sourceTree = "<group>"; };
+		BB82A8912B13585A00737014 /* HeartDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartDataObject.swift; sourceTree = "<group>"; };
+		BB82A8932B13587C00737014 /* ActivityDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataObject.swift; sourceTree = "<group>"; };
+		BB82A8952B13588C00737014 /* NutritionDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionDataObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,11 @@
 				BB7D089A2B1258EF00177AAF /* HeartRateChartViewController.swift */,
 				BB7D089C2B12815000177AAF /* SleepChart.swift */,
 				BB7D089E2B1282E000177AAF /* SleepChartViewController.swift */,
+				BB82A88F2B13584400737014 /* SleepDataObject.swift */,
+				BB82A8912B13585A00737014 /* HeartDataObject.swift */,
+				BB82A8932B13587C00737014 /* ActivityDataObject.swift */,
+				BB82A8952B13588C00737014 /* NutritionDataObject.swift */,
+				BB1CEB612B136B75005BD52D /* ActivityViewController.swift */,
 			);
 			path = FitFolio;
 			sourceTree = "<group>";
@@ -337,18 +352,23 @@
 				BB7D08862B11D77900177AAF /* MainGoalViewController.swift in Sources */,
 				BB7D08882B11D7A700177AAF /* CreateAccountViewController.swift in Sources */,
 				BB7D089D2B12815000177AAF /* SleepChart.swift in Sources */,
+				BB82A8962B13588C00737014 /* NutritionDataObject.swift in Sources */,
+				BB82A8922B13585A00737014 /* HeartDataObject.swift in Sources */,
 				7A215C722B07A8BE003B119D /* AppDelegate.swift in Sources */,
 				BB7D08842B11D4D300177AAF /* RegistrationViewController.swift in Sources */,
 				BB7D08802B11CADF00177AAF /* RegistrationViewModel.swift in Sources */,
+				BB82A8902B13584400737014 /* SleepDataObject.swift in Sources */,
 				BB7D08972B124B4500177AAF /* HeartRate.swift in Sources */,
 				BB7D08992B124EF800177AAF /* HealthViewController.swift in Sources */,
 				BB7D089B2B1258EF00177AAF /* HeartRateChartViewController.swift in Sources */,
 				7A03D9A92B0F5C4900D98F07 /* ProfileViewController.swift in Sources */,
 				7A215C742B07A8BE003B119D /* SceneDelegate.swift in Sources */,
 				BB7D08822B11CF7C00177AAF /* RegistrationData.swift in Sources */,
+				BB1CEB622B136B75005BD52D /* ActivityViewController.swift in Sources */,
 				BB7D087C2B11497800177AAF /* RealmManager.swift in Sources */,
 				BB7D089F2B1282E000177AAF /* SleepChartViewController.swift in Sources */,
 				7AE13C222B11F92000A5FC7D /* SessionManager.swift in Sources */,
+				BB82A8942B13587C00737014 /* ActivityDataObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

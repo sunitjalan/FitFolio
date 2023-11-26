@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import RealmSwift
+
+class HeartDataObject: Object {
+    @Persisted var registrationData: RegistrationDataObject?
+    @Persisted var date: Date?
+    @Persisted var avgHeartRate: Int?
+    @Persisted var activeHeartRate: Int?
+    @Persisted var restingHeartRate: Int?
+}

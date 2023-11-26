@@ -34,3 +34,23 @@ class RegistrationDataObject: Object {
         }
     }
 }
+
+extension RegistrationDataObject {
+    var sleepData: LinkingObjects<SleepDataObject> {
+        return LinkingObjects(fromType: SleepDataObject.self, property: "registrationData")
+    }
+
+    var heartData: LinkingObjects<HeartDataObject> {
+        return LinkingObjects(fromType: HeartDataObject.self, property: "registrationData")
+    }
+
+    var activityData: LinkingObjects<ActivityDataObject> {
+        return LinkingObjects(fromType: ActivityDataObject.self, property: "registrationData")
+    }
+
+    var nutritionData: LinkingObjects<NutritionDataObject> {
+        return LinkingObjects(fromType: NutritionDataObject.self, property: "registrationData")
+    }
+}
+
+

@@ -9,12 +9,34 @@ import UIKit
 
 class ActivityViewController: UIViewController {
 
+    @IBOutlet weak var activityDataLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guard let currentUserEmail = SessionManager.shared.currentUserEmail else {
+                print("Current user email not available.")
+                return
+        }
+
+            // Fetch activity data for the current user
+        if let activityData = RealmManager.getActivityData(forEmail: currentUserEmail) {
+                // Process activity data
+            var activityDataString = "Activity Data:\n"
+            for entry in activityData {
+                activityDataString += "\(entry.date ?? Date()): Steps: \(entry.steps), Calories Burnt: \(entry.caloriesBurnt)\n"
+                // Add other activity data as needed
+            }
+
+            
+        // Update the label with activity data
+            
+            print("\(activityDataString)")
+        activityDataLabel.text = activityDataString
+        } else {
+                // No activity data found for the user
+        activityDataLabel.text = "No activity data found for the user."
+        }
     }
-    
 
     /*
     // MARK: - Navigation
