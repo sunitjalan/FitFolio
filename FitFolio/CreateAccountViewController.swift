@@ -8,6 +8,16 @@
 import UIKit
 import RealmSwift
 
+// Create a String extension for email validation
+extension String {
+    func isValidEmail() -> Bool {
+        // This is a simple email validation, you might want to use a more sophisticated approach
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        return emailPredicate.evaluate(with: self)
+    }
+}
+
 class CreateAccountViewController: UIViewController {
     var registrationData = RegistrationData()
     
@@ -25,19 +35,83 @@ class CreateAccountViewController: UIViewController {
     
     @IBAction func RegisterButtonTapped(_ sender: Any) {
         
+        guard validateInput() else {
+                    // Input validation failed, show an alert
+            showAlert(message: "Please correct the input fields.")
+            return
+        }
+        
         registrationData.username = UsernameTextField.text
         registrationData.email = EmailTextField.text
         registrationData.password = PasswordTextField.text
         registrationData.fitnessGoal = "Easy"
                 // Store data in Realm
-        storeDataInRealm()
-        guard let registrationDataObject = RegistrationDataObject.userWithEmail(registrationData.email!) else {
+        // Check for uniqueness of username and email
+        if isUniqueUsername() && isUniqueEmail() {
+            // Store data in Realm
+            storeDataInRealm()
+
+            guard let registrationDataObject = RegistrationDataObject.userWithEmail(registrationData.email!) else {
                 print("Error fetching RegistrationDataObject from Realm")
                 return
             }
 
             // Generate dummy data using the RegistrationDataObject
-        generateDummyData(registrationDataObject: registrationDataObject)
+            generateDummyData(registrationDataObject: registrationDataObject)
+        } else {
+            // Show an alert for duplicate username or email
+            showAlert(message: "Username or email already exists. Please choose a different one.")
+        }
+    }
+    
+    func validateInput() -> Bool {
+        // Validate username, email, and password
+        guard let username = UsernameTextField.text, !username.isEmpty else {
+            // Show an alert indicating that username is required
+            showAlert(message: "Username is required.")
+            return false
+        }
+
+        guard let email = EmailTextField.text, !email.isEmpty, email.isValidEmail() else {
+            // Show an alert indicating that a valid email is required
+            showAlert(message: "Invalid email address.")
+            return false
+        }
+
+        guard let password = PasswordTextField.text, password.count >= 6 else {
+            // Show an alert indicating that a password with minimum 6 characters is required
+            showAlert(message: "Password must be at least 6 characters long.")
+            return false
+        }
+
+        return true
+    }
+
+    func isUniqueUsername() -> Bool {
+        // Check if the username already exists in the database
+        guard let username = UsernameTextField.text else {
+            return false
+        }
+
+        let realm = try! Realm()
+        return realm.objects(RegistrationDataObject.self).filter("username == %@", username).isEmpty
+    }
+
+    func isUniqueEmail() -> Bool {
+        // Check if the email already exists in the database
+        guard let email = EmailTextField.text else {
+            return false
+        }
+
+        let realm = try! Realm()
+        return realm.objects(RegistrationDataObject.self).filter("email == %@", email).isEmpty
+    }
+
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
     }
     
     func storeDataInRealm() {
