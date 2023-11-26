@@ -42,6 +42,7 @@
 		BB82A8922B13585A00737014 /* HeartDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82A8912B13585A00737014 /* HeartDataObject.swift */; };
 		BB82A8942B13587C00737014 /* ActivityDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82A8932B13587C00737014 /* ActivityDataObject.swift */; };
 		BB82A8962B13588C00737014 /* NutritionDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82A8952B13588C00737014 /* NutritionDataObject.swift */; };
+		BB973C2C2B13767F00BCCC67 /* FitnessTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB973C2B2B13767F00BCCC67 /* FitnessTarget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		BB82A8912B13585A00737014 /* HeartDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartDataObject.swift; sourceTree = "<group>"; };
 		BB82A8932B13587C00737014 /* ActivityDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataObject.swift; sourceTree = "<group>"; };
 		BB82A8952B13588C00737014 /* NutritionDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionDataObject.swift; sourceTree = "<group>"; };
+		BB973C2B2B13767F00BCCC67 /* FitnessTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTarget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				BB82A8932B13587C00737014 /* ActivityDataObject.swift */,
 				BB82A8952B13588C00737014 /* NutritionDataObject.swift */,
 				BB1CEB612B136B75005BD52D /* ActivityViewController.swift */,
+				BB973C2B2B13767F00BCCC67 /* FitnessTarget.swift */,
 			);
 			path = FitFolio;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			files = (
 				BB7D088C2B12453A00177AAF /* WidgetCardView.swift in Sources */,
 				BB7D088A2B11EA5000177AAF /* LoginViewController.swift in Sources */,
+				BB973C2C2B13767F00BCCC67 /* FitnessTarget.swift in Sources */,
 				7AA8D62E2B10941100B1FAA5 /* HomeViewController.swift in Sources */,
 				7A215C762B07A8BE003B119D /* ViewController.swift in Sources */,
 				BB7D08862B11D77900177AAF /* MainGoalViewController.swift in Sources */,
