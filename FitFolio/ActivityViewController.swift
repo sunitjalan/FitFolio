@@ -17,14 +17,29 @@ extension Date {
 
 class ActivityViewController: UIViewController {
 
+    @IBOutlet var outerView: UIView!
+    @IBOutlet var circularProgressView: CircularProgressView!
     @IBOutlet weak var activityDataLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set the frame to the bounds of your UIView
+        circularProgressView.frame = outerView.bounds
+
+        // Set color and progress as needed
+//            circularProgressView.progressColor = UIColor(hex: "#022F40")?.cgColor
+        circularProgressView.progress = 0.6
+        
+
+        // Add the circular progress view to your UIView
+        outerView.addSubview(circularProgressView)
 
         guard let currentUserEmail = SessionManager.shared.currentUserEmail else {
                 print("Current user email not available.")
                 return
         }
+        
+       
 
 //            // Fetch activity data for the current user
 //        if let activityData = RealmManager.getActivityData(forEmail: currentUserEmail) {
