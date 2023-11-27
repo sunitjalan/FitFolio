@@ -17,8 +17,15 @@
 		7A215C892B07A8BF003B119D /* FitFolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A215C882B07A8BF003B119D /* FitFolioTests.swift */; };
 		7A215C932B07A8BF003B119D /* FitFolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A215C922B07A8BF003B119D /* FitFolioUITests.swift */; };
 		7A215C952B07A8BF003B119D /* FitFolioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A215C942B07A8BF003B119D /* FitFolioUITestsLaunchTests.swift */; };
+		7A51F2362B13D7ED006CAD9A /* MentalHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A51F2352B13D7ED006CAD9A /* MentalHealthViewController.swift */; };
 		7AA8D62E2B10941100B1FAA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8D62D2B10941100B1FAA5 /* HomeViewController.swift */; };
 		7AE13C222B11F92000A5FC7D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE13C212B11F92000A5FC7D /* SessionManager.swift */; };
+		7AEEDF9B2B13FE3600B1F0AF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEDF9A2B13FE3600B1F0AF /* SettingsViewController.swift */; };
+		7AEEDF9D2B14005F00B1F0AF /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEDF9C2B14005F00B1F0AF /* SleepViewController.swift */; };
+		7AEEDF9F2B14108900B1F0AF /* HeartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEDF9E2B14108900B1F0AF /* HeartViewController.swift */; };
+		7AEEDFA12B14171D00B1F0AF /* NutrientPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEDFA02B14171D00B1F0AF /* NutrientPieChartView.swift */; };
+		7AEEDFA32B14175900B1F0AF /* NutrientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEDFA22B14175900B1F0AF /* NutrientViewController.swift */; };
+		7AEEDFA52B14194500B1F0AF /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEDFA42B14194500B1F0AF /* CircularProgressView.swift */; };
 		BB1CEB622B136B75005BD52D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CEB612B136B75005BD52D /* ActivityViewController.swift */; };
 		BB7D08782B11494800177AAF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BB7D08772B11494800177AAF /* Realm */; };
 		BB7D087A2B11494800177AAF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BB7D08792B11494800177AAF /* RealmSwift */; };
@@ -77,8 +84,15 @@
 		7A215C8E2B07A8BF003B119D /* FitFolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitFolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A215C922B07A8BF003B119D /* FitFolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitFolioUITests.swift; sourceTree = "<group>"; };
 		7A215C942B07A8BF003B119D /* FitFolioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitFolioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A51F2352B13D7ED006CAD9A /* MentalHealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthViewController.swift; sourceTree = "<group>"; };
 		7AA8D62D2B10941100B1FAA5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7AE13C212B11F92000A5FC7D /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		7AEEDF9A2B13FE3600B1F0AF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7AEEDF9C2B14005F00B1F0AF /* SleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
+		7AEEDF9E2B14108900B1F0AF /* HeartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartViewController.swift; sourceTree = "<group>"; };
+		7AEEDFA02B14171D00B1F0AF /* NutrientPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientPieChartView.swift; sourceTree = "<group>"; };
+		7AEEDFA22B14175900B1F0AF /* NutrientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientViewController.swift; sourceTree = "<group>"; };
+		7AEEDFA42B14194500B1F0AF /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		BB1CEB612B136B75005BD52D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		BB7D08752B11028100177AAF /* FitFolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitFolio.entitlements; sourceTree = "<group>"; };
 		BB7D087B2B11497800177AAF /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -161,6 +175,12 @@
 				7A215C732B07A8BE003B119D /* SceneDelegate.swift */,
 				7A215C752B07A8BE003B119D /* ViewController.swift */,
 				7A215C772B07A8BE003B119D /* Main.storyboard */,
+				7AEEDFA22B14175900B1F0AF /* NutrientViewController.swift */,
+				7AEEDFA42B14194500B1F0AF /* CircularProgressView.swift */,
+				7AEEDF9E2B14108900B1F0AF /* HeartViewController.swift */,
+				7AEEDF9C2B14005F00B1F0AF /* SleepViewController.swift */,
+				7AEEDF9A2B13FE3600B1F0AF /* SettingsViewController.swift */,
+				7A51F2352B13D7ED006CAD9A /* MentalHealthViewController.swift */,
 				7AE13C212B11F92000A5FC7D /* SessionManager.swift */,
 				BB7D08892B11EA5000177AAF /* LoginViewController.swift */,
 				BB7D08872B11D7A700177AAF /* CreateAccountViewController.swift */,
@@ -183,6 +203,7 @@
 				BB82A8912B13585A00737014 /* HeartDataObject.swift */,
 				BB82A8932B13587C00737014 /* ActivityDataObject.swift */,
 				BB82A8952B13588C00737014 /* NutritionDataObject.swift */,
+				7AEEDFA02B14171D00B1F0AF /* NutrientPieChartView.swift */,
 				BB1CEB612B136B75005BD52D /* ActivityViewController.swift */,
 				BB973C2B2B13767F00BCCC67 /* FitnessTarget.swift */,
 			);
@@ -348,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AEEDF9F2B14108900B1F0AF /* HeartViewController.swift in Sources */,
 				BB7D088C2B12453A00177AAF /* WidgetCardView.swift in Sources */,
 				BB7D088A2B11EA5000177AAF /* LoginViewController.swift in Sources */,
 				BB973C2C2B13767F00BCCC67 /* FitnessTarget.swift in Sources */,
@@ -362,7 +384,9 @@
 				BB7D08842B11D4D300177AAF /* RegistrationViewController.swift in Sources */,
 				BB7D08802B11CADF00177AAF /* RegistrationViewModel.swift in Sources */,
 				BB82A8902B13584400737014 /* SleepDataObject.swift in Sources */,
+				7A51F2362B13D7ED006CAD9A /* MentalHealthViewController.swift in Sources */,
 				BB7D08972B124B4500177AAF /* HeartRate.swift in Sources */,
+				7AEEDF9D2B14005F00B1F0AF /* SleepViewController.swift in Sources */,
 				BB7D08992B124EF800177AAF /* HealthViewController.swift in Sources */,
 				BB7D089B2B1258EF00177AAF /* HeartRateChartViewController.swift in Sources */,
 				7A03D9A92B0F5C4900D98F07 /* ProfileViewController.swift in Sources */,
@@ -371,8 +395,12 @@
 				BB1CEB622B136B75005BD52D /* ActivityViewController.swift in Sources */,
 				BB7D087C2B11497800177AAF /* RealmManager.swift in Sources */,
 				BB7D089F2B1282E000177AAF /* SleepChartViewController.swift in Sources */,
+				7AEEDFA52B14194500B1F0AF /* CircularProgressView.swift in Sources */,
 				7AE13C222B11F92000A5FC7D /* SessionManager.swift in Sources */,
 				BB82A8942B13587C00737014 /* ActivityDataObject.swift in Sources */,
+				7AEEDF9B2B13FE3600B1F0AF /* SettingsViewController.swift in Sources */,
+				7AEEDFA12B14171D00B1F0AF /* NutrientPieChartView.swift in Sources */,
+				7AEEDFA32B14175900B1F0AF /* NutrientViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

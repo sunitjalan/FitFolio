@@ -30,6 +30,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var mediumView: UIView!
     @IBOutlet var hardView: UIView!
     
+    @IBOutlet var genderImage: UIImageView!
     @IBOutlet var cardViews: [UIView]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +62,28 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(mainGoalViewTapped))
         mainGoalView.addGestureRecognizer(tapGesture)
         
+        fetchAndDisplayGender()
+        
     }
+    
+    func fetchAndDisplayGender() {
+            // Retrieve the current user's email from the session manager
+            guard let currentUserEmail = SessionManager.shared.currentUserEmail else {
+                print("Current user email not available.")
+                return
+            }
+            
+            // Use the email to fetch the user data from Realm
+            if let currentUser = RegistrationDataObject.userWithEmail(currentUserEmail) {
+                // Update UI with user's gender
+                if let gender = currentUser.gender {
+                    genderImage.image = UIImage(named: gender)
+                }
+            } else {
+                // Handle the case where the current user data is not available
+                print("Current user data not available.")
+            }
+        }
     
     @objc func difficultyImageViewTapped(_ sender: UITapGestureRecognizer) {
         guard let tappedImageView = sender.view as? UIImageView,
@@ -294,4 +316,5 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
             print("Error updating database: \(error)")
         }
     }
-}
+    
+    }
