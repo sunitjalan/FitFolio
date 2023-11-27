@@ -9,6 +9,7 @@ import UIKit
 
 class HeartViewController: UIViewController {
 
+    @IBOutlet weak var HeartInsightsLabel: UILabel!
     @IBOutlet var cardViews: [UIView]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,7 @@ class HeartViewController: UIViewController {
             card.layer.masksToBounds = true
         }
         // Do any additional setup after loading the view.
+        HeartInsightsLabel.text = "Low HRV, potential stress or fatigue"
     }
     
 

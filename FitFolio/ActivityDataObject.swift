@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class ActivityDataObject: Object {
+class ActivityDataObject: Object, Codable {
     @Persisted var registrationData: RegistrationDataObject?
     @Persisted var date: Date?
     @Persisted var steps: Int = 0
@@ -16,5 +16,9 @@ class ActivityDataObject: Object {
     @Persisted var flightsClimbed: Int = 0
     @Persisted var standingHours: Int = 0
     @Persisted var workoutHours: Int = 0
+    
+    enum CodingKeys: String, CodingKey {
+            case date, steps, caloriesBurnt, flightsClimbed, standingHours, workoutHours
+    }
 }
 

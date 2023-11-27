@@ -9,12 +9,13 @@ import UIKit
 
 class NutrientViewController: UIViewController {
 
+    @IBOutlet weak var NutritionInsightsLabel: UILabel!
     @IBOutlet var cardViews: [UIView]!
     @IBOutlet var outerView: UIStackView!
     @IBOutlet var circularProgressView: CircularProgressView!
     override func viewDidLoad() {
             super.viewDidLoad()
-
+        NutritionInsightsLabel.text = "Consider making some adjustments to your nutritional habits for improved health. Low in: calories, fiber"
         for card in cardViews {
             card.layer.cornerRadius = 10
             card.layer.masksToBounds = true

@@ -50,6 +50,7 @@
 		BB82A8942B13587C00737014 /* ActivityDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82A8932B13587C00737014 /* ActivityDataObject.swift */; };
 		BB82A8962B13588C00737014 /* NutritionDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82A8952B13588C00737014 /* NutritionDataObject.swift */; };
 		BB973C2C2B13767F00BCCC67 /* FitnessTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB973C2B2B13767F00BCCC67 /* FitnessTarget.swift */; };
+		BB973C2E2B14640900BCCC67 /* DataEntryStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB973C2D2B14640900BCCC67 /* DataEntryStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		BB82A8932B13587C00737014 /* ActivityDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataObject.swift; sourceTree = "<group>"; };
 		BB82A8952B13588C00737014 /* NutritionDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionDataObject.swift; sourceTree = "<group>"; };
 		BB973C2B2B13767F00BCCC67 /* FitnessTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTarget.swift; sourceTree = "<group>"; };
+		BB973C2D2B14640900BCCC67 /* DataEntryStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				7AEEDFA02B14171D00B1F0AF /* NutrientPieChartView.swift */,
 				BB1CEB612B136B75005BD52D /* ActivityViewController.swift */,
 				BB973C2B2B13767F00BCCC67 /* FitnessTarget.swift */,
+				BB973C2D2B14640900BCCC67 /* DataEntryStruct.swift */,
 			);
 			path = FitFolio;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				7AA8D62E2B10941100B1FAA5 /* HomeViewController.swift in Sources */,
 				7A215C762B07A8BE003B119D /* ViewController.swift in Sources */,
 				BB7D08862B11D77900177AAF /* MainGoalViewController.swift in Sources */,
+				BB973C2E2B14640900BCCC67 /* DataEntryStruct.swift in Sources */,
 				BB7D08882B11D7A700177AAF /* CreateAccountViewController.swift in Sources */,
 				BB7D089D2B12815000177AAF /* SleepChart.swift in Sources */,
 				BB82A8962B13588C00737014 /* NutritionDataObject.swift in Sources */,

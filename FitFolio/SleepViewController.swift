@@ -9,6 +9,7 @@ import UIKit
 
 class SleepViewController: UIViewController {
 
+    @IBOutlet weak var SleepInsightLabel: UILabel!
     @IBOutlet var cardViews: [UIView]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,7 @@ class SleepViewController: UIViewController {
             card.layer.masksToBounds = true
         }
         // Do any additional setup after loading the view.
+        SleepInsightLabel.text = "Normal Sleep, Low deep sleep, focus on improving sleep environment and habits"
     }
     
 
